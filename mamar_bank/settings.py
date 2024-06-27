@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -108,13 +108,14 @@ WSGI_APPLICATION = 'mamar_bank.wsgi.application'
 
 
 
+# Database documentation https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://mamarbank_sncq_user:OPqxRE62M0DTxyzkxTJTsjDMbpqIXtnP@dpg-cpullltds78s73dvm3dg-a.oregon-postgres.render.com/mamarbank_sncq',
+        default='postgresql://mamarbank_fg9g_user:z01WpcuBoaqs6xC82slG43LpsKhu1nID@dpg-cpup7ujv2p9s73bjtcf0-a.oregon-postgres.render.com/mamarbank_fg9g',
     )
 }
-
 
 
 
